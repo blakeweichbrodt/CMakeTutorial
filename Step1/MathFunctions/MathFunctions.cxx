@@ -2,8 +2,7 @@
 
 namespace {
 // a hack square root calculation using simple operations
-double mysqrt(double x)
-{
+double mysqrt(double x) {
   if (x <= 0) {
     return 0;
   }
@@ -21,11 +20,8 @@ double mysqrt(double x)
   }
   return result;
 }
-}
+} // namespace
 
 namespace mathfunctions {
-double sqrt(double x)
-{
-  return mysqrt(x);
-}
-}
+double sqrt(double x) { return mysqrt(x); }
+} // namespace mathfunctions
